@@ -1,0 +1,221 @@
+<html>
+	<head>
+        
+         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+        <!--
+            Load Carto's code so we can pull in our Carto maps.
+        -->
+        <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodbui/assets/4.6.25/stylesheets/deep_insights.css" />
+        <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+        <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodbui/assets/4.6.25/stylesheets/public_editor3.css" />
+        <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
+        
+		<title>Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+    
+	<body>
+        <style>
+            p {line-height: 1.5; padding-left: 4.5em; padding-right: 4.5em; padding-top: 1.5em; text-align: justify;} 
+            a {font-size: 16px;color: dimgrey}
+            p1 {padding-left: 2.5em; padding-bottom: 5.5em;text-align: justify;}
+            #resourcemap {
+                height: 500px;
+                width: 100%;
+          }
+            .sql-overlay {
+                background: #ABCFCE;
+                opacity: 0.5;
+                border-radius: 5px;
+                position: absolute;
+                padding: 10px;
+                top: 65px;
+                right: 25px;
+                margin-top: 75px;
+                margin-right: 50px;
+            }
+            
+            .icons {margin-left: 70px;}
+            
+        </style>
+		<div class="page-wrap">
+
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html" class="active"><span class="icon fa-home"></span></a></li>
+						<li><a href="gallery.html"><span class="icon fa-camera-retro"></span></a></li>
+						<li><a href="generic.html"><span class="icon fa-file-text-o"></span></a></li>
+					</ul>
+				</nav>
+
+				<section id="main">
+                    
+						<section id="banner">
+							<div class="inner">
+								<h1>Lost and Found</h1>
+								<p>mapping Hindus in Karachi</a></p>
+								<ul class="actions">
+									<li><a href="#start" class="button alt scrolly big">Continue</a></li>
+								</ul>
+							</div>
+						</section>
+        
+        <div class="starthere">
+<div><h7 id=start>Religion and Urban Motility</h7> 
+<p>Religion, in our theocratic democracy, has become a complex socio-political-spatial phenomenon, so, our responding politics must be complexed too; tackling different pieces of the assemblage and allowing for more continuous flows of (ex)change. This project, Lost & Found in Our Green and White, aims to demonstrate the live, work, play and pray aspects of and for Hindu populations in Karachi: their histories and promises, risks and limits, and intersectionalities with the State. This project is not to submerge art under a political agenda, or to provide data for an eventual analysis. But, it is to create, and recreate, new, alternate or even counter-archives that could offer us another window into the past, and therefore, the future.
+I want to visualize how religion reflects a vision (flawed, or even failed, as it might be) of identity, memory and social justice in multi-faith societies of Karachi, and how it plays a part in determining the way our larger post-colonial, capitalist public spheres are constructed. This multi-disciplinary public art project should foreground ethnographic and urbanistic research on spatial and cultural appropriation of Hindus – exploring links between Religion, State and Urbanization.</p></div>
+
+<div><h7>Project Objectives</h7>
+    <div class="icons">
+<img src="http://i.imgur.com/2yCbRgat.jpg?1">
+    <p>2017 marks 70 years since Indo-Pak partition and independence from Britain. A quick math of an average young adults age, who might have experienced that great migration, together with Pakistan's life expectancy of 66.4 years, might suggest that it is almost already too late to gather this data first-hand. Nevertheless, this project wants to collect data while we can, from those who remember and from those who know, from vivid memories and scavenged artifacts. This information bank will continue to expand, through the participation of its audience, to become a Living Archive for younger generations.</p>
+        
+<img src="http://i.imgur.com/FF3bKj5t.jpg?1">
+<p>Power does not all lie in the human agents of space, and non-human forces aren't passive actors in an urban environment. By focusing on non-human forms in the city, this project wants to expose the role that such representations can play in creating/contesting exclusionary socio-cultural processes; these include instruments and tools in constitution, health, education, real estate, development sectors etc. like media, newspapers, books, cultural stereotypes, policies, language, names, buildings etc. In effect, trace the production, reproduction and transformation of visible and invisible infrastructures of our Hindu population in Karachi's urban space and spheres.</p>
+          
+<img src="http://i.imgur.com/3XDw3r2t.jpg?1">
+<p>Expand the role of research and design as an agent of social transformation through co-creation and an orchestrated dialogical exchange for a broader public. Tapping various sources of powers at play, this project aims to create a space of thorough learning and critical discourses, for its participants and audience alike, that explores possible forms of knowledge production, collaboration, engagement, representation, and tools within the urban realm. It believes that bringing historical narratives, social practices and cultural forms to the foreground, and available to the public, it will make the situation hard to ignore; foster dialogue and exchange within and among a diverse community of practitioners and multi-faith citizens.</p>
+    </div>
+
+        <h7>Selected Projects</h7>
+        <p>The following map, filtered by keywords, marks published projects, artists, professionals around some of the same topics. You may find it useful to see the works or its authors.</p>
+        	<section id="Map">
+                <div class="gallery">
+        <div class="buttonskeywords">
+            <button class="Archive">Archive</button>
+            <button class="Religion">Religion</button>
+            <button class="City">City</button>
+            <button class="History">History</button>
+            <button class="Community">Community</button>
+            <button class="Media">Media</button>
+            <button class="Politics">Politics</button>
+            <button class="Story">Story</button>
+            <button class="Pedagogy">Pedagogy</button>
+            <button class="Reset">Reset</button>
+        </div>
+       
+                    <div id="resourcemap"></div>
+                    <div class="sql-overlay"></div>
+									
+									<footer>
+										<a href="gallery.html" class="button big">More</a>
+									</footer>
+								</div>
+						</section>
+
+					<!-- Contact -->
+						<section id="contact">
+							<!-- Social -->
+								<div class="social column">
+									<h3>Curator</h3>
+									<p1>Priya Pinjani is an architect from Karachi, Pakistan. A graduate of Indus Valley School of Art and Architecture, she practiced hospitality and residential design for a year and a half before making her way to New York and The New School. While formal design is something she enjoys thoroughly, she has always been interested in politics of space, right to the city and the social ecosystems that operate within an urban environment. She tries to synthesize these interests with Design and Urban Ecologies at Parsons, and hopes to go back home with a much broader, and relevant, definition of both architecture and design.</p1>
+									
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+								</div>
+
+							<!-- Form -->
+								<div class="column">
+									<h3>Intrigued? Get in Touch! </h3>
+									<form action="#" method="post">
+										<div class="field half first">
+											<label for="name">Name</label>
+											<input name="name" id="name" type="text" placeholder="Name">
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input name="email" id="email" type="email" placeholder="Email">
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6" placeholder="Hi!"></textarea>
+										</div>
+										<ul class="actions">
+											<li><input value="Send Message" class="button" type="submit"></li>
+										</ul>
+									</form>
+								</div>
+
+						</section>
+
+					<!-- Footer -->
+						<footer id="footer">
+							<div class="copyright">
+								&copy;<a href="https://templated.co/">TEMPLATED</a>.
+							</div>
+						</footer>
+				
+		
+<script>
+    $(document).ready(function () {
+                cartodb.createVis('resourcemap', 'https://thenewschool.carto.com/u/priyapinjani/api/v2/viz/514b05fa-181c-11e7-b9da-0e3ebc282e83/viz.json', {
+            center_lat: 30,
+            center_lon: 69,
+            cartodb_logo: false,
+                    search: false,
+                    shareable: false,
+                    zoom: 3,
+        })
+        
+        .done(function (vis, layers) {
+            artists1_1Layer = layers[1].getSubLayer(1);
+        });
+    
+    $('.Religion').click(function () {
+    artists1_1Layer.setSQL("SELECT * FROM artists1_1 WHERE keywords = 'Religion' OR   keywords_3 = 'Religion' OR keywords_2 = 'Religion'");
+});
+    $('.Archive').click(function () {
+    artists1_1Layer.setSQL("SELECT * FROM artists1_1 WHERE keywords = 'Archive' OR keywords_2 = 'Archive' OR keywords_3 = 'Archive'");
+});   
+      $('.City').click(function () {
+    artists1_1Layer.setSQL("SELECT * FROM artists1_1 WHERE keywords = 'City' OR keywords_3 = 'City' OR keywords_2 = 'City'");
+});    
+        $('.History').click(function () {
+    artists1_1Layer.setSQL("SELECT * FROM artists1_1 WHERE keywords = 'History' OR keywords_3 = 'History' OR keywords_2 = 'History'");
+});    
+        $('.Community').click(function () {
+    artists1_1Layer.setSQL("SELECT * FROM artists1_1 WHERE keywords = 'Community' OR keywords_3 = 'Community' OR keywords_2 = 'Community'");
+});    
+        $('.Media').click(function () {
+    artists1_1Layer.setSQL("SELECT * FROM artists1_1 WHERE keywords = 'Media' OR keywords_3 = 'Media' OR keywords_2 = 'Media'");
+});    
+        $('.Politics').click(function () {
+    artists1_1Layer.setSQL("SELECT * FROM artists1_1 WHERE keywords = 'Politics' OR keywords_3 = 'Politics' OR keywords_2 = 'Politics'");
+}); 
+        $('.Story').click(function () {
+    artists1_1Layer.setSQL("SELECT * FROM artists1_1 WHERE keywords = 'Story' OR keywords_3 = 'Story' OR keywords_2 = 'Story'");
+}); 
+         $('.Pedagogy').click(function () {
+    artists1_1Layer.setSQL("SELECT * FROM artists1_1 WHERE keywords = 'Pedagogy' OR keywords_3 = 'Pedagogy' OR keywords_2 = 'Pedagogy'");
+}); 
+    $('.Reset').click(function () {
+    artists1_1Layer.setSQL("SELECT * FROM artists1_1");
+}); 
+    // Build a URL. Replace your username below and the SQL statement
+                var url = 'https://priyapinjani.carto.com/api/v2/sql?' + $.param({
+                    q: "SELECT COUNT(*) FROM artists1_1"
+                    });
+        
+        $.getJSON(url).done(function(data) {
+                        // Once the data has loaded, update the text in the overlay
+                        //
+                        // If you want to see the data that is returned, uncomment this line:
+                        //console.log(data);
+                        //
+                        // In this case we get data.rows[0].count, get rows from 
+                        // data, get the first row, then get count from that.
+                        $('.sql-overlay').text('There are ' + data.rows[0].count + ' artists selected for the First Round of Proposals')
+                    });
+    });
+        </script>
+        <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
+
+        </div>
+    </body>
+</html>
