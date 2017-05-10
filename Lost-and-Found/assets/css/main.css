@@ -54,6 +54,7 @@
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
+        padding-top: 2px;
 	}
 
 /* Basic */
@@ -164,6 +165,7 @@
 	p {
 		margin: 0 0 2em 0;
 	}
+p1 {line-height: 1.5; padding-left: 3.9em; padding-right: 4.5em; padding-top: 1.5em; text-align: justify;}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 700;
@@ -223,6 +225,10 @@ h8 {
     font-size: 1.5em; padding-top: 1.5em; padding-bottom: 0.5em; font-weight: 700;}
 h9 {
     font-size: 1.5em; padding-left: 0.75em; padding-bottom: 0.5em; font-weight: 700;}
+
+h10 {
+    font-size: 2em; padding-bottom: 0.2em; font-weight: 700; padding-left: 0.4em; padding-bottom: 1em;}
+      
 	
 .starthere {padding-top: 10.5em;}
 	
@@ -346,8 +352,8 @@ h9 {
 		input[type="button"].active,
 		button.active,
 		.button.active {
-			color: #FFF;
-			background: #22313F;
+			color: #ABCFCE;
+			background: #FFF;
 		}
 
 			input[type="submit"].active:hover,
@@ -355,8 +361,8 @@ h9 {
 			input[type="button"].active:hover,
 			button.active:hover,
 			.button.active:hover {
-				color: #FFF;
-				background: #22313F;
+				color: #ABCFCE;
+				background: #FFF;
 			}
 
 		input[type="submit"]:hover,
@@ -766,7 +772,7 @@ h9 {
     .map {padding-bottom: 1.5em; padding-left: 3.5em;
 position: relative;}
 
-.buttonskeywords {padding-bottom: 1.5em; }
+}
 
 		@media screen and (max-width: 980px) {
 
@@ -1481,16 +1487,16 @@ position: relative;}
 		-ms-justify-content: center;
 		justify-content: center;
 		min-height: 75vh;
-		height: 75vh;
+		height: 95vh;
 		position: relative;
-		background: #000;
+		background: #f1f1f1;
 		background-image: url(../../images/banner.jpg);
 		background-size: cover;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: right;
 		text-align: center;
-		color: #FFF;
+		color: #f1f1f1;
 	}
 
 		#banner:before {
@@ -1504,10 +1510,10 @@ position: relative;}
 			transition-delay: 0.25s;
 			content: '';
 			display: block;
-			background-color: #000;
+			background-color: #f1f1f1;
 			height: 100%;
 			left: 0;
-			opacity: 0.65;
+			opacity: 0.1;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -1530,20 +1536,21 @@ position: relative;}
 		}
 
 		#banner h1 {
-			font-size: 4em;
+			font-size: 20em;
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
-			color: #FFF;
+			color: grey;
 		}
 
 		#banner p {
-			font-size: 1.5em;
+			font-size: 2em;
 			margin-bottom: 1.75em;
+            color: grey;
 		}
 
 		#banner a {
-			color: #FFF;
+			color: grey;
 			text-decoration: none;
 		}
 
