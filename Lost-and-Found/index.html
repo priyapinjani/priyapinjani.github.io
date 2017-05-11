@@ -38,11 +38,76 @@
                 margin-right: 50px;
             }
             
-            .icons {float: left; margin-left: 60px; width: 30%;}
-            .icons img {max-width: 60%; margin-bottom: 3.5em; margin-top: 3.5em;}
-            .iconstext p {margin-left: 30px;}
+            .icons {float: left; margin-left: 65px; width: 32%;}
+            .icons img {max-width: 60%; margin-bottom: 2.5em; margin-top: 2.5em;}
+            .iconstext p {padding-left:20px;}
             
+            #button li {border-radius: 4px; display: inline-block;
+		text-align: center; background: #ABCFCE;
+		color: #FFF;
+		border-radius: 4px;
+		border: 0;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 700;
+		height: 2.85em;
+		line-height: 2.95em; padding: 0 1.5em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;}
             
+                <style>
+       .button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		background: #FFFFFF;
+		color: #FFF;
+		border-radius: 4px;
+		border: 0;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 700;
+		height: 2.85em;
+		line-height: 2.95em;
+		padding: 0 1.5em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+		input[type="submit"].active,
+		input[type="reset"].active,
+		input[type="button"].active,
+		button.active,
+		.button.active {
+			color: #ABCFCE;
+			background: #FFFFFF;
+		}
+
+			input[type="submit"].active:hover,
+			input[type="reset"].active:hover,
+			input[type="button"].active:hover,
+			button.active:hover,
+			.button.active:hover {
+				color: #ABCFCE;
+			background: #FFFFFF;
+			}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button:hover,
+		.button:hover {
+			color: #ABCFCE;
+			background: #FFFFFF;
+		}
+        </style>
         </style>
 		<div class="page-wrap">
 
@@ -89,11 +154,11 @@ I want to visualize how religion reflects a vision (flawed, or even failed, as i
 </p>
     </div>
 
-        <div><h7>Selected Projects</h7></div>
+        <div><h7>Selected Artists</h7></div>
         <p>The following map, filtered by thematic keywords, marks published projects, artists, professionals around some of the same topics. You may find it useful to see these works or their authors.</p>
         	<section id="Map">
                 <div class="gallery">
-        <div class="buttonskeywords">
+        <div id="button">
             <ul>
             <li class="button" id="Archive">Archive</button>
             <li class="button" id="Religion">Religion</button>
